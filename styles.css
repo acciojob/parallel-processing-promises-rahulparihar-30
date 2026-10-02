@@ -1,1 +1,20 @@
 /*  your css code here. If applicable */
+.loader {
+  /* Size and shape */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  
+  /* The track (light gray) and the spinner bar (blue) */
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  
+  /* Animation behavior */
+  animation: spin 1s linear infinite;
+}
+
+/* The continuous rotation logic */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
